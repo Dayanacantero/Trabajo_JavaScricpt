@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Mini</title>
+    <link rel="stylesheet" href="addcompras.css">
+</head>
+<body>
+    <div class="store-container">
+        <h1>Tienda de Productos</h1>
+
+        <div class="products-grid">
+            <div class="product-item" data-id="1">
+                <img src="img/product1.jpg" alt="Producto 1">
+                <h3>Falda Short T : U</h3>
+                <p>Precio: $10.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product2.jpg" alt="Producto 2">
+                <h3>Blusa Básica T : U</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <!-- Más productos -->
+        </div>
+
+        <h2>Carrito de Compras</h2>
+        <div class="cart">
+            <div class="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="addcompras.js"></script>
+</body>
+</html>

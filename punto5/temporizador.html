@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador de Cuenta Regresiva</title>
+    <link rel="stylesheet" href="temporizador.css">
+</head>
+<body>
+    <div class="countdown-container">
+        <h1>Temporizador de Cuenta Regresiva</h1>
+
+       
+        <form id="countdown-form">
+            <label for="event-date">Fecha del evento:</label>
+            <input type="date" id="event-date" required>
+
+            <label for="event-time">Hora:</label>
+            <input type="time" id="event-time" required>
+
+            <button type="submit">Inicia Cuenta Regresiva</button>
+        </form>
+
+        <div class="countdown">
+            <div class="time">
+                <span id="days">00</span>
+                <p>Días</p>
+            </div>
+            <div class="time">
+                <span id="hours">00</span>
+                <p>Horas</p>
+            </div>
+            <div class="time">
+                <span id="minutes">00</span>
+                <p>Minutos</p>
+            </div>
+            <div class="time">
+                <span id="seconds">00</span>
+                <p>Segundos</p>
+            </div>
+        </div>
+        <p id="message"></p>
+    </div>
+
+    <script src="temporizador.js"></script>
+</body>
+</html>

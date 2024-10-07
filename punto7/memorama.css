@@ -1,0 +1,114 @@
+/* Estilos generales para el body */
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal del juego */
+.game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Título del juego */
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Estilo para la cuadrícula */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las cartas */
+.card {
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+/* Estilo de la carta (frente y dorso) */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Efecto de volteo */
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Cara frontal de la carta */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo de la parte frontal de la carta */
+.card-front {
+    background-color: #007bff;
+}
+
+/* Estilo de la parte trasera de la carta */
+.card-back {
+    background-color: #fff;
+    backface-visibility: hidden; /* Oculta la parte trasera al voltear */
+}
+
+/* Imagen dentro de la carta */
+.card-front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Estilo para la pizarra de puntajes */
+.score-board {
+    margin-top: 20px;
+}
+
+/* Botón de reinicio */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a84646;
+}
+
+/* Estilo del puntaje */
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor (Monedas)</title>
+    <link rel="stylesheet" href="conversor.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Conversor (Monedas)</h1>
+        <form id="currency-form">
+            <label for="amount">Cantidad sin puntos:</label>
+            <input type="number" id="amount" required placeholder="Ingrese la cantidad">
+
+            <label for="from-currency">De:</label>
+            <select id="from-currency">
+                <option value="USD">Dólar USD</option>
+                <option value="EUR">Euro EUR</option>
+                <option value="GBP">Libra GBP</option>
+                <option value="JPY">Yen JPY</option>
+                <option value="MXN">Peso MXN</option>
+                <option value="COP">Peso COP</option>
+            </select>
+
+            <label for="to-currency">A:</label>
+            <select id="to-currency">
+                <option value="USD">Dólar USD</option>
+                <option value="EUR">Euro EUR</option>
+                <option value="GBP">Libra GBP</option>
+                <option value="JPY">Yen JPY</option>
+                <option value="MXN">Peso MXN</option>
+                <option value="COP">Peso COP</option>
+            </select>
+
+            <button type="submit">Convertir</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="conversor.js"></script>
+</body>
+</html>
+
